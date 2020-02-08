@@ -8,8 +8,15 @@
                 margin: 5px;
                 box-shadow: 1px 1px black;
             }
+            #corpo{
+                padding-top: 110px;
+            }
             #Menu{
                 background-color: lightcoral;
+                position: fixed;
+                width: 100%;
+                margin-left: -10px;
+                margin-top: -10px;
             }
             li{
                 display: inline;
@@ -48,11 +55,30 @@
             }
             .imagem{
                 border: solid 1px black;
-                width: 300px;
+                width: 49%;;
                 height: 300px;
                 margin-top: 20px;
-                background-image: linear-gradient(coral, lightcoral);
+                background-image: linear-gradient(lightcoral, coral);
                 
+            }
+            .caixa{
+                width: 80%;
+                margin-left: 10%;
+                margin-top: 20px;
+                height: 30px;
+                font-size: 16pt;
+                text-align: center;
+                font-family: cursive;
+                border-top-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            form{
+                padding-top: 30px;
+            }
+            .entrar{
+                background-color: lightcoral;
+                color: antiquewhite;
+                height: 40px;
             }
         </style>
     </head>
@@ -61,16 +87,20 @@
             <div id="Menu">
                 <nav>
                     <ul>
-                        <li><a class="Nav">Home</a></li>
-                        <li><a class="Nav">Parte 1</a></li>
-                        <li><a class="Nav">Parte 2</a></li>
-                        <li><a class="Nav">Parte 3</a></li>
+                        <li><a class="Nav"><img src="https://img.icons8.com/cotton/40/000000/home--v2.png"></a></li>
+                        <li><a class="Nav"><img src="https://img.icons8.com/cotton/40/000000/birthday.png"></a></li>
+                        <li><a class="Nav"><img src="https://img.icons8.com/cotton/52/000000/pig--v1.png"></a></li>
+                        <li><a class="Nav"><img src="https://img.icons8.com/officel/38/000000/books.png"></a></li>
                     </ul>
                 </nav>
             </div>
             <div id="corpo">
                 <div class="imagem esquerda">
-                    
+                    <form>
+                        <input class="caixa" type="text" placeholder="User"><br>
+                        <input class="caixa" type="password" placeholder="senha"><br>
+                        <input class="caixa entrar" type="button" value="Entrar">
+                    </form>
                 </div>
                 <div class="texto direita">
                     <h1>Título 1</h1>
